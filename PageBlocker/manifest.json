@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "version": "0.1",
+    "name": "Page Blocker",
+    "description": "Extensão de bloqueio de página",
+    "author": "Matheus Willian Freire de Souza Jucá",
+    "permissions":[
+        "activeTab",
+        "storage",
+        "tabs",
+        "scripting"
+    ],
+
+    "background": {
+        "service_worker": "blocker.js"
+      },
+
+    "action": {
+   	 "default_title": "Block",
+   	 "default_popup": "index.html",
+   	 "default_icon": "128.png"
+    }
+}
